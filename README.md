@@ -31,3 +31,6 @@ A physbone and series of constraints control position of the prop. Contact track
 
 ## **Contact**
 If you need help with something you can message me on discord at ThatFatKidsMom
+
+## **Docs**
+This repository ships a `Docs/` directory (written in Chinese) that explains how the Avatar Prop system works in detail. Every document under `Docs/` begins with a 3-line frontmatter whose only field is `description`; the rest of the file is the document body.
