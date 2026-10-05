@@ -36,12 +36,12 @@ tag = AvatarProp.Distance     radius = 0.05
 
 ## 状态机怎么用它
 
-- 进入 `Grabbed` 需要 `TrackersCheck == true`，并且三个 `Prox > 0.57`（见 [09-大状态-被抓取Grabbed](./09-大状态-被抓取Grabbed.md)）。
-- 在 `Grabbed` 里若 `TrackersCheck` 变 false（仍握着），退回 `Reattach` 重新校准（见 [10-大状态-放下PropDropped](./10-大状态-放下PropDropped.md)）。
+- 进入 `Grabbed` 需要 `TrackersCheck == true`，并且三个 `Prox > 0.57`（见 [大状态-被抓取Grabbed](./大状态-被抓取Grabbed.md)）。
+- 在 `Grabbed` 里若 `TrackersCheck` 变 false（仍握着），退回 `Reattach` 重新校准（见 [大状态-放下PropDropped](./大状态-放下PropDropped.md)）。
 
 即：三个 `Prox` 负责"手在不在"，`TrackersCheck` 负责"三点是否收敛、估计是否可信"。
 
 ## 相关文档
 
-- Tracker 位置计算：[04-Tracker位置与TrackerBlendTree](./04-Tracker位置与TrackerBlendTree.md)
-- 状态机：[06-状态机总览](./06-状态机总览.md)
+- Tracker 位置计算：[Tracker位置与TrackerBlendTree](./Tracker位置与TrackerBlendTree.md)
+- 状态机：[状态机总览](./状态机总览.md)

@@ -22,9 +22,9 @@ description: 讲解 Grabbed（左右手）这一抓取状态的行为、它与�
 |---|---|---|
 | 三个 `Proximity` / `Hand checker` `m_IsActive` | 0 | **检测用的传感器关闭**（已经不需要） |
 | tracker 的 ScaleConstraint `GlobalWeight` | 1 | tracker 被约束到源 `000` 的 scale 1，**放大** |
-| `Position` 源权重 | source0 `Resyncy boi` = 1 | 道具位置跟手（见 [02-位移链路](./02-位移链路.md)） |
-| `Rotation` 源权重 | source0 `Rotation`(AimIK) = 1 | 道具朝向跟 AimIK（见 [03-旋转链路](./03-旋转链路.md)） |
-| `Save position` `m_Enabled` | 1 | 锁存体在后台跟踪（见 [11-锁存机制](./11-锁存机制.md)） |
+| `Position` 源权重 | source0 `Resyncy boi` = 1 | 道具位置跟手（见 [位移链路](./位移链路.md)） |
+| `Rotation` 源权重 | source0 `Rotation`(AimIK) = 1 | 道具朝向跟 AimIK（见 [旋转链路](./旋转链路.md)） |
+| `Save position` `m_Enabled` | 1 | 锁存体在后台跟踪（见 [锁存机制](./锁存机制.md)） |
 
 ## 迁移
 
@@ -35,7 +35,7 @@ description: 讲解 Grabbed（左右手）这一抓取状态的行为、它与�
 
 ## 一个常见现象：编辑器里接收器球"放大又缩回"
 
-这在编辑器里很常见，原因写在 [04-Tracker位置与TrackerBlendTree](./04-Tracker位置与TrackerBlendTree.md) 的 tracker 结构与这里的状态切换：
+这在编辑器里很常见，原因写在 [Tracker位置与TrackerBlendTree](./Tracker位置与TrackerBlendTree.md) 的 tracker 结构与这里的状态切换：
 
 - 大小来自 tracker 的 ScaleConstraint：`Grabbed` 设 `GlobalWeight=1`（大），`Expansion/Reattach` 设 `0`（小）。
 - 从 `Grabbed` 出来的转移都是 `duration = 0`，所以一帧内就缩回，看起来"突然"。
@@ -43,5 +43,5 @@ description: 讲解 Grabbed（左右手）这一抓取状态的行为、它与�
 
 ## 相关文档
 
-- 总览：[06-状态机总览](./06-状态机总览.md)
-- 下一个大状态：[10-大状态-放下PropDropped](./10-大状态-放下PropDropped.md)
+- 总览：[状态机总览](./状态机总览.md)
+- 下一个大状态：[大状态-放下PropDropped](./大状态-放下PropDropped.md)

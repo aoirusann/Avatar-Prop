@@ -47,9 +47,9 @@ Middle/X±Y± -> Middle finger 的 source0..3
 
 ## 最终得到的三点
 
-三组 tracker 的最终位置，就是 [03-旋转链路](./03-旋转链路.md) 里 AimIK 用来定坐标架的三个点；而系统是否认为这三点"收敛有效"，由 [05-TrackerSync与TrackersCheck](./05-TrackerSync与TrackersCheck.md) 判定。
+三组 tracker 的最终位置，就是 [旋转链路](./旋转链路.md) 里 AimIK 用来定坐标架的三个点；而系统是否认为这三点"收敛有效"，由 [TrackerSync与TrackersCheck](./TrackerSync与TrackersCheck.md) 判定。
 
 ## 相关文档
 
-- 旋转链路：[03-旋转链路](./03-旋转链路.md)
-- 抓握校验：[05-TrackerSync与TrackersCheck](./05-TrackerSync与TrackersCheck.md)
+- 旋转链路：[旋转链路](./旋转链路.md)
+- 抓握校验：[TrackerSync与TrackersCheck](./TrackerSync与TrackersCheck.md)

@@ -13,7 +13,7 @@ description: 讲解 Prop dropped、Prop dropped uncalibrated、Reattach 及 rele
   - `Object container` 保持显示、`Tracker container` 打开、`Proximity` 关闭；tracker 保持小尺寸。
   - `Position` 源切到 source2 `Save position`（= 1）；`Rotation` 源切到 source1 `Save rotation`（= 1）。
   - `Save position` / `Save rotation` 的 `m_Enabled = 0`：**锁存体被关闭，冻结在松手前的姿态**。
-- 效果：道具就停在松手的位置与朝向。原理见 [11-锁存机制](./11-锁存机制.md)。
+- 效果：道具就停在松手的位置与朝向。原理见 [锁存机制](./锁存机制.md)。
 
 ## Prop dropped uncalibrated
 
@@ -44,5 +44,5 @@ Prop dropped ──(关开关)──► … transition off ──► Off
 
 ## 相关文档
 
-- 总览：[06-状态机总览](./06-状态机总览.md)
-- 锁存原理：[11-锁存机制](./11-锁存机制.md)
+- 总览：[状态机总览](./状态机总览.md)
+- 锁存原理：[锁存机制](./锁存机制.md)
