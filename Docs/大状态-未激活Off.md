@@ -4,7 +4,7 @@ description: 讲解未激活状态 Off 的行为（隐藏道具、关闭追踪�
 
 # 大状态：未激活 Off
 
-`Off` 是状态机的默认状态，使用 `Off.anim`。
+`Off` 是状态机的入口默认状态，使用 `Off.anim`。注意：本 fork 里 `AvatarProp/Enable` 默认 = 1，所以加载后通常立刻离开 `Off` 进入 `Enabled`；只有把开关关掉才会回到 `Off`。
 
 ## 这个状态做什么
 
@@ -14,8 +14,8 @@ description: 讲解未激活状态 Off 的行为（隐藏道具、关闭追踪�
 | `Tracker container` `m_IsActive` | 0 | 追踪器整组关闭 |
 | `Cull` `GlobalWeight` | 0 | 剔除辅助体权重 0 |
 | 三个 tracker `GlobalWeight`（ScaleConstraint） | 0 | tracker 保持初始小尺寸 |
-| `Position` 源权重 | source1 `Reset position` = 1 | 道具位置锁到复位锚点 |
-| `Bone base` `m_Enabled` | 1；源 source0 `Reset position` = 1 | 手柄底座跟随复位锚点 |
+| `Position` 源权重 | source1 `Reset transform` = 1 | 道具位置锁到复位锚点 |
+| `Bone base` `m_Enabled` | 1；源 source0 `Reset transform` = 1 | 手柄底座跟随复位锚点 |
 | `Bone`（PhysBone） | 关（靠状态控制） | 手柄不参与 |
 | `Save position` `m_Enabled` | 1；source1（Hand） = 0.6 | 锁存体在追踪 |
 
