@@ -28,6 +28,12 @@ description: 记录本 fork 相对上游 Avatar-Prop 的改动：把道具挂到
 - `Bone` 的 `Immobile` 保持上游设计值 **1**（松手后手柄锚在世界、不随 avatar 走动）。
 - **不要**给状态 clip 添加任何 PhysBone 属性的动画曲线（如 `immobile`）。PhysBone 属性不可被动画驱动，但 Unity 编辑器在 play 时仍会按曲线写入，从而把 `immobile` 写成 0、破坏"世界锚定"（表现为移动角色时手柄被拖着绕圈）。
 
+## 5. 多实例：自定义 Contact 标签去重
+
+- 新增一个小 NDMF 工具（`NDMF/`）：标记组件 `ContactTagRenamer` + 构建期 pass。装多份 prop 时，构建期给每个实例的自定义 Contact 标签加上唯一后缀，避免不同道具通过共享标签互相触发。
+- 目标标签在组件上配置（本 prefab 填了 `AvatarProp.Distance`、`Avatarprop.DistanceCheck`）；未打标记的实例不处理。
+- 详见 [参数与接触标签](./参数与接触标签.md)。
+
 ## 相关文档
 
 - 系统总览：[系统总览](./系统总览.md)

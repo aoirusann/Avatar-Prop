@@ -931,6 +931,7 @@ GameObject:
   - component: {fileID: 2343899760459586946}
   - component: {fileID: 4728824070952882379}
   - component: {fileID: 9111241385909150772}
+  - component: {fileID: 7013025846622968457}
   m_Layer: 0
   m_Name: Avatar Prop
   m_TagString: Untagged
@@ -1265,6 +1266,22 @@ MonoBehaviour:
   AffectsRotationX: 1
   AffectsRotationY: 1
   AffectsRotationZ: 1
+--- !u!114 &7013025846622968457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2900655092238288277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029ef56d15670764eaeefea77fd693c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tags:
+  - AvatarProp.Distance
+  - Avatarprop.DistanceCheck
+  suffixOverride: 
 --- !u!1 &3088076623133052976
 GameObject:
   m_ObjectHideFlags: 0
