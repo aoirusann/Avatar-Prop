@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: -1506855854, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
   m_Name: Avatar prop parameters
   m_EditorClassIdentifier: 
+  isEmpty: 0
   parameters:
   - name: AvatarProp/Enable
     valueType: 2
     saved: 0
-    defaultValue: 0
+    defaultValue: 1
     networkSynced: 1
