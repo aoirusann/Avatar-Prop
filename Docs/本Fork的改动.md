@@ -34,6 +34,12 @@ description: 记录本 fork 相对上游 Avatar-Prop 的改动：把道具挂到
 - 目标标签在组件上配置（本 prefab 填了 `AvatarProp.Distance`、`Avatarprop.DistanceCheck`）；未打标记的实例不处理。
 - 详见 [参数与接触标签](./参数与接触标签.md)。
 
+## 6. 解放 `Object container` 的旋转
+
+- 删除了所有状态 clip 里 `Object container` 的旋转曲线（`localEulerAnglesRaw` 等），使容器的局部旋转不再被动画驱动，改用**序列化值**（可自由设置，默认 0）。
+- 目的：放进容器里的自定义道具能以自己的局部坐标系工作（例如"上下漂浮"动画的方向对齐）。
+- 注：`m_LocalScale` / `m_IsActive` 曲线保留（Off 隐藏、0.01 过渡缩放仍生效）。
+
 ## 相关文档
 
 - 系统总览：[系统总览](./系统总览.md)
