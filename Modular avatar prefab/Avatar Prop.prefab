@@ -51,6 +51,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - FingerMiddle
   allowSelf: 1
@@ -109,6 +110,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - FingerMiddle
   allowSelf: 1
@@ -167,6 +169,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - Hand
   allowSelf: 1
@@ -226,6 +229,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - AvatarProp.Distance
 --- !u!1 &1210142908934807952
@@ -311,6 +315,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - FingerMiddle
   allowSelf: 1
@@ -370,6 +375,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - Avatarprop.DistanceCheck
 --- !u!114 &7849030338115145075
@@ -902,6 +908,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - FingerMiddle
   allowSelf: 1
@@ -1309,6 +1316,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - Hand
   allowSelf: 1
@@ -1368,6 +1376,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - AvatarProp.Distance
   allowSelf: 1
@@ -1905,6 +1914,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - Hand
   allowSelf: 1
@@ -1963,6 +1973,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - FingerRing
   - FingerLittle
@@ -2196,6 +2207,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - FingerMiddle
   allowSelf: 1
@@ -2731,6 +2743,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - Hand
   allowSelf: 1
@@ -2881,6 +2894,7 @@ MonoBehaviour:
   collisionFilter:
     allowSelf: 1
     allowOthers: 1
+    contentTypes: -1
   radius: 0.1
   radiusCurve:
     serializedVersion: 2
@@ -2954,10 +2968,12 @@ MonoBehaviour:
   grabFilter:
     allowSelf: 1
     allowOthers: 1
+    contentTypes: -1
   allowPosing: 0
   poseFilter:
     allowSelf: 1
     allowOthers: 1
+    contentTypes: -1
   snapToHand: 1
   grabMovement: 1
   maxStretch: Infinity
@@ -3039,6 +3055,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - HandL
   allowSelf: 1
@@ -3065,6 +3082,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - HandR
   allowSelf: 1
@@ -3123,6 +3141,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - FingerRing
   - FingerLittle
@@ -3182,6 +3201,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - FingerRing
   - FingerLittle
@@ -3382,6 +3402,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - Hand
   allowSelf: 1
@@ -3578,9 +3599,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fixTransforms: 1
   solver:
+    executedInEditor: 0
     IKPosition: {x: 0, y: 1.28, z: 3.654}
     IKPositionWeight: 1
-    initiated: 0
     root: {fileID: 7397696333510448156}
     target: {fileID: 4356817157979725729}
     tolerance: 0
@@ -4309,6 +4330,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - FingerRing
   - FingerLittle
@@ -4368,6 +4390,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - FingerRing
   - FingerLittle
@@ -4475,6 +4498,7 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   localOnly: 0
+  contentTypes: -1
   collisionTags:
   - Avatarprop.DistanceCheck
   allowSelf: 1
