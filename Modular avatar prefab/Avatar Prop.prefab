@@ -4387,7 +4387,7 @@ GameObject:
   - component: {fileID: 4683493142107437451}
   - component: {fileID: 379794907084917163}
   m_Layer: 0
-  m_Name: Reset position
+  m_Name: Reset transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

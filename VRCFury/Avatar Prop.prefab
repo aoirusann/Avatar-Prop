@@ -1729,7 +1729,7 @@ GameObject:
   - component: {fileID: 2881479153585516861}
   - component: {fileID: 277148547168875533}
   m_Layer: 0
-  m_Name: Reset position
+  m_Name: Reset transform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
